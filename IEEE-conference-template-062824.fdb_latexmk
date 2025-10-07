@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1759461687.79364 "IEEE-conference-template-062824.tex" "IEEE-conference-template-062824.pdf" "IEEE-conference-template-062824" 1759461688.22481 0
+["pdflatex"] 1759472076.01935 "IEEE-conference-template-062824.tex" "IEEE-conference-template-062824.pdf" "IEEE-conference-template-062824" 1759472076.50952 0
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1721433600 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -84,9 +84,9 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1721433600 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1759383809.99548 535263 72cb405c5fd7dd2dd41dc69a7813776f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1759383759 7571768 67f5c0552462846ca528215961b81162 ""
-  "IEEE-conference-template-062824.aux" 1759461688.13723 2404 f98cc315a62cf6b32768a36b0fa72aad "pdflatex"
+  "IEEE-conference-template-062824.aux" 1759472076.41491 2404 f98cc315a62cf6b32768a36b0fa72aad "pdflatex"
   "IEEE-conference-template-062824.tex" 1719589993 16374 6d365c6ccd0bfca54a887effdb463a75 ""
-  "IEEEtran.cls" 1440654524 288304 b67b6fc6c2abb39f9b461923f5199343 ""
+  "IEEEtran.cls" 1759472074.60545 288304 b67b6fc6c2abb39f9b461923f5199343 ""
   "fig1.png" 1719239881 13815 9af23e798dccf51edbe98938c641893e ""
   (generated)
   "IEEE-conference-template-062824.aux"
