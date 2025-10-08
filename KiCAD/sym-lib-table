@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "DIY_detector-custom-parts")(type "KiCad")(uri "${KIPRJMOD}/DIY_detector-custom-parts.lib")(options "")(descr ""))
+  (lib (name "ProyectoFisica-rescue")(type "KiCad")(uri "${KIPRJMOD}/ProyectoFisica-rescue.kicad_sym")(options "")(descr ""))
+)
