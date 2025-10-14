@@ -1,0 +1,21 @@
+######### Sin el opamp conectado #########
+
+AMP_A (entrada):
+    Vout = 0.57 V
+    Vin- = 0.84 V
+    Vin+ = 6.67 V (Tensión del divisor entre R2 y R1)
+
+AMP_B (salida):
+    Vout = 0 V
+    Vin- = 0 V
+    Vin+ = 4.38 V (Tensión del divisor entre R6 y R7)
+
+######### Chequeo de pistas (continuidad) #########
+
+- Diodos -> OK, están en inversa.
+- Tengo las tensiones bien en los divisores, por lo tanto las R1, R2, R6, R7 y
+  sus respectivas pistas están bien. 
+- Todas las pistas estan bien.
+- 
+- 
+- 
