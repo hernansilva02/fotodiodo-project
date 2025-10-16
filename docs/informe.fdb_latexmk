@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex informe"] 1760566385.44222 "informe.aux" "informe.bbl" "informe" 1760566385.49087 0
+["bibtex informe"] 1760569219.68024 "informe.aux" "informe.bbl" "informe" 1760569220.00158 0
   "./IEEEtran.bst" 1760469320.21368 61632 1eded68932b68cdfaf04f54eba82634b ""
   "./refs.bib" 1760469320.21768 827 0709f00bf26a09c400661934f1d9e0ac ""
-  "informe.aux" 1760566385.29424 702 acc983c0c7b4f381ecf880a01e231f10 "pdflatex"
+  "informe.aux" 1760569219.92594 718 0de832a9bbfda1f6597fa9282f33f27c "pdflatex"
   (generated)
   "informe.bbl"
   "informe.blg"
   (rewritten before read)
-["pdflatex"] 1760566385.03003 "informe.tex" "informe.pdf" "informe" 1760566385.49098 0
+["pdflatex"] 1760569219.73237 "informe.tex" "informe.pdf" "informe" 1760569220.00176 0
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1721433600 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -82,9 +82,9 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1730600292.1939 535383 d3efdb18617f29de472038e618f96af4 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1741507762 7571873 d88a86cb981c867cbfd0abeea1254b72 ""
   "IEEEtran.cls" 1760469320.21468 288304 b67b6fc6c2abb39f9b461923f5199343 ""
-  "informe.aux" 1760566385.29424 702 acc983c0c7b4f381ecf880a01e231f10 "pdflatex"
-  "informe.bbl" 1760566385.48624 1486 e1d7a420d40a235206f0e95253c8954e "bibtex informe"
-  "informe.tex" 1760469320.21768 4067 6f2ddebf0c22d01696f7356a883e767b ""
+  "informe.aux" 1760569219.92594 718 0de832a9bbfda1f6597fa9282f33f27c "pdflatex"
+  "informe.bbl" 1760569219.72694 1486 2f58c5f0bfe8415d558676744f52a416 "bibtex informe"
+  "informe.tex" 1760569218.78794 3975 ae19472de15e919aa429e78e006d239b ""
   (generated)
   "informe.aux"
   "informe.log"
