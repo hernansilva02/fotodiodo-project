@@ -20,14 +20,14 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{mpdi}
-\BIBentryALTinterwordspacing
-O.~Keller, M.~Benoit, A.~M\"uller, and S.~Schmeling, ``Smartphone and tablet-based sensing of environmental radioactivity: Mobile low-cost measurements for monitoring, citizen science, and educational purposes,'' \emph{Sensors}, vol.~19, 2019. [Online]. Available: \url{https://www.mdpi.com/1424-8220/19/19/4264}
-\BIBentrySTDinterwordspacing
-
 \bibitem{energy-department}
 \BIBentryALTinterwordspacing
 {U.S Department of Energy}. Doe explains...beta decay. [Online]. Available: \url{https://www.energy.gov/science/doe-explainsbeta-decay}
+\BIBentrySTDinterwordspacing
+
+\bibitem{mpdi}
+\BIBentryALTinterwordspacing
+O.~Keller, M.~Benoit, A.~M\"uller, and S.~Schmeling, ``Smartphone and tablet-based sensing of environmental radioactivity: Mobile low-cost measurements for monitoring, citizen science, and educational purposes,'' \emph{Sensors}, vol.~19, 2019. [Online]. Available: \url{https://www.mdpi.com/1424-8220/19/19/4264}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
