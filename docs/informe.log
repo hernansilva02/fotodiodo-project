@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.10.2)  17 OCT 2025 02:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.3.9)  18 OCT 2025 03:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -254,7 +254,7 @@ Before submitting the final camera ready copy, remember to:
  <./img/PIN_structure.jpg>] (./informe.aux) ) 
 Here is how much of TeX's memory you used:
  2984 strings out of 477136
- 49691 string characters out of 5813392
+ 49691 string characters out of 5813393
  1866388 words of memory out of 6000000
  23254 multiletter control sequences out of 15000+600000
  549416 words of font info for 104 fonts, out of 8000000 for 9000
