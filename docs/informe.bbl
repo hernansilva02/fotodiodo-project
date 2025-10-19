@@ -20,14 +20,19 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{energy-department}
-\BIBentryALTinterwordspacing
-{U.S Department of Energy}. Doe explains...beta decay. [Online]. Available: \url{https://www.energy.gov/science/doe-explainsbeta-decay}
-\BIBentrySTDinterwordspacing
-
 \bibitem{mpdi}
 \BIBentryALTinterwordspacing
 O.~Keller, M.~Benoit, A.~M\"uller, and S.~Schmeling, ``Smartphone and tablet-based sensing of environmental radioactivity: Mobile low-cost measurements for monitoring, citizen science, and educational purposes,'' \emph{Sensors}, vol.~19, 2019. [Online]. Available: \url{https://www.mdpi.com/1424-8220/19/19/4264}
+\BIBentrySTDinterwordspacing
+
+\bibitem{nist}
+\BIBentryALTinterwordspacing
+M.~Berger, J.~Coursey, M.~Zucker, and J.~Chang, ``Stopping-power \& range tables for electrons, protons, and helium ions,'' National Institute of Standards and Technology, Tech. Rep., October 2009. [Online]. Available: \url{https://www.nist.gov/pml/stopping-power-range-tables-electrons-protons-and-helium-ions}
+\BIBentrySTDinterwordspacing
+
+\bibitem{energy-department}
+\BIBentryALTinterwordspacing
+{U.S Department of Energy}. Doe explains...beta decay. [Online]. Available: \url{https://www.energy.gov/science/doe-explainsbeta-decay}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
