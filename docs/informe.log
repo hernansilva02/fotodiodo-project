@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.10.2)  19 OCT 2025 05:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.10.2)  20 OCT 2025 05:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -187,56 +187,100 @@ LaTeX Info: Redefining \] on input line 2954.
 ) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+\caption@tempdima=\dimen175
+\captionmargin=\dimen176
+\caption@leftmargin=\dimen177
+\caption@rightmargin=\dimen178
+\caption@width=\dimen179
+\caption@indent=\dimen180
+\caption@parindent=\dimen181
+\caption@hangindent=\dimen182
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEtablestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\normalfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi \fi  on input line 1176.
+)
+\c@KVtest=\count278
+\sf@farskip=\skip54
+\sf@captopadj=\dimen183
+\sf@capskip=\skip55
+\sf@nearskip=\skip56
+\c@subfigure=\count279
+\c@subfigure@save=\count280
+\c@lofdepth=\count281
+\c@subtable=\count282
+\c@subtable@save=\count283
+\c@lotdepth=\count284
+\sf@top=\skip57
+\sf@bottom=\skip58
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count278
+\l__color_backend_stack_int=\count285
 \l__pdf_internal_box=\box55
 ) (./informe.aux)
 \openout1 = `informe.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
 
 -- Lines per column: 56 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count279
-\scratchdimen=\dimen175
+\scratchcounter=\count286
+\scratchdimen=\dimen184
 \scratchbox=\box56
-\nofMPsegments=\count280
-\nofMParguments=\count281
+\nofMPsegments=\count287
+\nofMParguments=\count288
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count282
-\MPscratchDim=\dimen176
-\MPnumerator=\count283
-\makeMPintoPDFobject=\count284
+\MPscratchCnt=\count289
+\MPscratchDim=\dimen185
+\MPnumerator=\count290
+\makeMPintoPDFobject=\count291
 \everyMPtoPDFconversion=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
 <img/PIN_structure.jpg, id=15, 401.5pt x 288.07625pt>
 File: img/PIN_structure.jpg Graphic file (type jpg)
 <use img/PIN_structure.jpg>
-Package pdftex.def Info: img/PIN_structure.jpg  used on input line 127.
+Package pdftex.def Info: img/PIN_structure.jpg  used on input line 132.
 (pdftex.def)             Requested size: 180.67499pt x 129.6375pt.
+ [2 <./img/PIN_structure.jpg>]
+<img/BPW34S-ezgif.com-webp-to-png-converter.png, id=22, 2488.29625pt x 1553.805pt>
+File: img/BPW34S-ezgif.com-webp-to-png-converter.png Graphic file (type png)
+<use img/BPW34S-ezgif.com-webp-to-png-converter.png>
+Package pdftex.def Info: img/BPW34S-ezgif.com-webp-to-png-converter.png  used on input line 254.
+(pdftex.def)             Requested size: 108.405pt x 67.68954pt.
+<img/C-V.png, id=24, 444.66125pt x 587.19376pt>
+File: img/C-V.png Graphic file (type png)
+<use img/C-V.png>
+Package pdftex.def Info: img/C-V.png  used on input line 259.
+(pdftex.def)             Requested size: 108.405pt x 143.15141pt.
  (./informe.bbl)
 
 ** Conference Paper **
@@ -249,20 +293,22 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2 <./img/PIN_structure.jpg>] (./informe.aux) ) 
+[3
+
+ <./img/BPW34S-ezgif.com-webp-to-png-converter.png> <./img/C-V.png>] (./informe.aux) ) 
 Here is how much of TeX's memory you used:
- 2986 strings out of 477136
- 49702 string characters out of 5813392
- 1868388 words of memory out of 6000000
- 23256 multiletter control sequences out of 15000+600000
+ 4016 strings out of 477136
+ 70298 string characters out of 5813392
+ 1870388 words of memory out of 6000000
+ 24275 multiletter control sequences out of 15000+600000
  549416 words of font info for 104 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 57i,8n,62p,365b,339s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,10n,63p,365b,370s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on informe.pdf (2 pages, 136197 bytes).
+Output written on informe.pdf (3 pages, 1098499 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

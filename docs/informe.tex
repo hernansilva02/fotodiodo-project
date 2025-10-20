@@ -2,6 +2,11 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{url}
+\ifCLASSOPTIONcompsoc
+    \usepackage[caption=false,font=normalsize,labelfon t=sf,textfont=sf]{subfig}
+\else
+    \usepackage[caption=false,font=footnotesize]{subfig}
+\fi
 
 \makeatletter
 \newcommand{\authornewline}{
@@ -41,7 +46,7 @@
         Facultad Regional Avellaneda\\
         Universidad Tecnológica Nacional\\
         Buenos Aires, Argentina\\
-        foo@gmail.com
+        nicolas.lahorca.k@gmail.com
     }
     \and
     \IEEEauthorblockN{Luciano Justiniano}
@@ -49,7 +54,7 @@
         Facultad Regional Avellaneda\\
         Universidad Tecnológica Nacional\\
         Buenos Aires, Argentina\\
-        foo@gmail.com
+        luciano.nicolas.justiniano@gmail.com
     }
 }
 \title{Detector de Partículas Beta}
@@ -102,7 +107,7 @@
     \subsection{Formas de captar las partículas}
        El dispositivo electrónico más estudiado y utilizado para detectar la
        radiación de diferentes tipos de partículas es el diodo PIN o fotodiodo.
-       Como muestra la figura \ref{fig:pin}, este es similar en cuanto a
+       Como muestra la Fig.~\ref{fig:pin}, este es similar en cuanto a
        estructura a un diodo de juntura PN, la diferencia radica en que el PIN
        tiene una zona de material semiconductor intrínseco (zona I) entre la
        zona dopada positivamente (zona P) y la zona dopada negativamente (zona
@@ -124,7 +129,7 @@
        \newpage
        \begin{figure}[!t]
            \centering
-           \includegraphics[width=2.5inch]{img/PIN_structure.jpg}
+           \includegraphics[width=2.5in]{img/PIN_structure.jpg}
            \caption{Corte transversal de una estructura típica del diodo PIN}
            \label{fig:pin}
        \end{figure}
@@ -140,15 +145,15 @@
 
         \begin{equation}
             \label{d_x}
-            d(V) = \frac{\epsilon_{r}\epsilon_{0}A}{C(V)}
+            d(V) = \frac{\varepsilon_{r}\varepsilon_{0}A}{C(V)}
         \end{equation}
 
         \hfill \\ donde:
         \begin{itemize}
             \item d(V) es la profunidad de la zona sensible.
-            \item $\epsilon_{r}$ es la permitividad relativa del material, en este caso el Si
+            \item $\varepsilon_{r}$ es la permitividad relativa del material, en este caso el Si
                 (silicio).
-            \item $\epsilon_{0}$ es la permitividad del vacío.
+            \item $\varepsilon_{0}$ es la permitividad del vacío.
             \item A es el área física de la zona sensible del diodo.
             \item C(V) es la capacitancia del diodo a un determinado nivel de
                 voltaje de polarización inversa.
@@ -159,20 +164,103 @@
         valores de interés corresponden a partículas $\beta-$ (electrones). Para
         establecer el valor de energía mencionado, es necesario conocer la
         magnitud del rango \emph{CSDA (continuos slowing down approximation)}.
-        El rango CSDA es una aproximación muy cercana del promedio de longitud
-        de una trayectoria que recorre una partícula cargada a medida que se
-        frena hasta alcanzar el reposo \cite{nist}. Para los electrones, los
-        valores del CSDA están tabulados en \cite{nist}.\par
+        El rango CSDA es una aproximación muy cercana de la media de longitud de
+        una trayectoria que recorre una partícula cargada a medida que se frena
+        hasta alcanzar el reposo \cite{nist}. Para los electrones, los valores
+        del CSDA están tabulados en \cite{nist}.\par 
         Para obtener una medición fiable, es necesario que el rango CSDA sea
-        menor que la profundidad de la zona sensible del diodo; esto es
+        menor o igual que la profundidad de la zona sensible del diodo; esto es
+        \begin{equation}
+            R_{p} \leq d(V)
+            \label{eq:range}
+        \end{equation}
 
-        \begin{equation*}
-            R_{p} < d(V)
-        \end{equation*}
-
-        \hfill \\ donde $R_{p}$ es el rango CSDA.
+        \hfill \\ donde $\mathrm{R_{p}}$ es el rango CSDA.\\
+        De esta forma, la energía de la partícula incidente es completamente
+        disipada en el interior de la zona sensible.
 
     \section{Características Contructivas del Detector}
+        El dispositivo a realizar para detectar las partículas tiene como foco
+        ser portable y producir una señal de detección a la salida con amplitud
+        observable al medir con un osciloscopio digital. Con estos objetivos
+        definidos, el dispositivo estará compuesto por dos etapas:
+        \begin{itemize}
+            \item Etapa de detección: La opción mas documentada para la
+                detección de estas partículas es el diodo PIN BPW34, que es
+                posible observar en la Fig.~\ref{fig:bpw34}\subref{subfig:bpw34}; si se logra
+                aislarlo completamente de la luz incidente y de interferencias
+                electromagnéticas, es capaz de detectar radiaciones ionizantes
+                en su zona sensible.
+            \item Etapa de amplificación: Es necesario tener un nivel de ruido
+                muy reducido, ya que un nivel alto escondería los picos debido a
+                los impactos de las partículas. El candidato ideal que satisface
+                esos requerimientos es un amplificador operacional de alta
+                impedancia de entrada, como lo es la serie OPAx134 del
+                fabricante Texas Instruments. A su vez, esta etapa está
+                compuesta por una etapa de transimpedancia (conversión de la
+                corriente de los fotodiodos en tensión) y otra de amplificación
+                diferencial.
+        \end{itemize}
+
+        Ambas etapas deben tener su especificación correspondiente.
+
+        \subsection{Etapa de detección}
+            Debido a que uno de los objetivos es que el dispositivo detector sea
+            portable, la alimentación del circuito es de una pila de 9 V, con
+            una tensión nominal de 9,9 V. Con este valor de alimentación, el
+            circuito amplificador entrega aproximadamente 8 V de polarización
+            inversa a los diodos. La Fig.~\ref{fig:bpw34}\subref{subfig:c-v}
+            muestra que para un nivel de tensión de 8 V de $\mathrm{V_{R}}$
+            corresponde una capacitancia de aproximadamente 22 pF.\par
+            Reemplazando la capacitancia (para 8 V de $\mathrm{V_{R}}$) en
+            (\ref{d_x}), se obtiene
+
+            \begin{IEEEeqnarray*}{rCl}
+                d(V) & = & \frac{11,68\times 8,85\times10^{-12}\ \mathrm{F}\cdot
+                \mathrm{m^{-1}}\times 7.02\ \mathrm{mm^{2}}} {22\ \mathrm{pF}} \\
+                    d(V) & = & 32,98\ \mathrm{\mu m}   \\
+                    d(V) & \approx & 33\ \mathrm{\mu m} 
+            \end{IEEEeqnarray*}
+
+            Esto nos indica que un electrón puede viajar como máximo 33
+            $\mathrm{\mu m}$ dentro de la zona sensible, de manera tal que se
+            cumpla lo expresado con anterioridad en (\ref{eq:range}).\par
+            Debido a que la base de datos de \cite{nist} expresa los valores de
+            rango CSDA en unidades de $\mathrm{g/cm^{2}}$, es necesario que el d(V)
+            calculado esté también en dicha unidad; para esto, calculamos
+            \begin{equation*}
+                \sigma = \rho~t
+            \end{equation*}
+            donde $\sigma$ es la densidad superficial, $\rho$ es la densidad y t
+            es el espesor de la zona sensible (d(V) calculado).
+            Para 33 $\mathrm{\mu m}$, esto es
+            \begin{IEEEeqnarray*}{C} %deberia usar \begin{equation} con \begin{split}
+                \sigma=\rho~t\\
+                \sigma= 2,32\ \mathrm{g\cdot cm^{-3}}\ \times \ 0,0033\
+                \mathrm{cm}\\%
+                       = 7,6\times 10^{-3}\ \mathrm{g\cdot cm^{-2}}
+            \end{IEEEeqnarray*}
+
+            En la base de datos de \cite{nist} es posible observar que para Si,
+            la energía cinética máxima del electrón para un rango de $7,6\times
+            10^{-3}\ \mathrm{g\cdot cm^{-2}}$ es 60 KeV.
+        \subsection{Etapa de amplificación}
+
+        \begin{figure}[!b]
+            \centering
+            \subfloat[] {%
+                \includegraphics[width=1.5in]{img/BPW34S-ezgif.com-webp-to-png-converter.png}
+                \label{subfig:bpw34}
+            }
+            \hfil
+            \subfloat[] {%
+                \includegraphics[width=1.5in]{img/C-V.png}
+                \label{subfig:c-v}
+            }
+            \caption{Fotodiodo BPW34S de la marca Osram. (a) Imágen real del
+            fotodiodo. (b) Curva característica C-V del BPW34S}
+            \label{fig:bpw34}
+        \end{figure}
 
 % Las malditas referencias. TODO: Sacar este comment.
 \bibliographystyle{IEEEtran}
