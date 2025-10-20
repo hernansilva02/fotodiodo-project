@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex informe"] 1760984775.55778 "informe.aux" "informe.bbl" "informe" 1760984776.73185 0
-  "./IEEEtran.bst" 1759935388.14289 61632 1eded68932b68cdfaf04f54eba82634b ""
-  "./refs.bib" 1760968694.80744 1466 9aadb9b7e3918f8fbef95a37f28c78ed ""
-  "informe.aux" 1760984776.59841 3135 2895fca8491b6df86a01a402238deed4 "pdflatex"
+["bibtex informe"] 1760990993.08815 "informe.aux" "informe.bbl" "informe" 1760991958.28717 0
+  "./IEEEtran.bst" 1760469320.21368 61632 1eded68932b68cdfaf04f54eba82634b ""
+  "./refs.bib" 1760991769.31063 1622 b11ad558cac3c2baade73d3d0679b666 ""
+  "informe.aux" 1760991958.21364 3162 da0f21fb77949304d44ac3af52124414 "pdflatex"
   (generated)
   "informe.bbl"
   "informe.blg"
   (rewritten before read)
-["pdflatex"] 1760984775.58886 "informe.tex" "informe.pdf" "informe" 1760984776.7334 0
+["pdflatex"] 1760991957.53241 "informe.tex" "informe.pdf" "informe" 1760991958.28731 0
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1721433600 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -77,18 +77,18 @@
   "/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty" 1158586182 21369 9ef165ca6df8815c92e693146a376c92 ""
   "/usr/share/texlive/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1721433600 40900 887e0dc8cac988a9e9c574af364cf837 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1759383809.99548 535263 72cb405c5fd7dd2dd41dc69a7813776f ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1759383759 7571768 67f5c0552462846ca528215961b81162 ""
-  "IEEEtran.cls" 1759935388.14568 288304 b67b6fc6c2abb39f9b461923f5199343 ""
-  "img/BPW34S-ezgif.com-webp-to-png-converter.png" 1760912103.11635 1146112 68ddc6dddf2ff116d9501bfda28cc9d7 ""
-  "img/C-V.png" 1760934407.46733 14181 dc6f78ccf026452c7eaca2e5c137b321 ""
-  "img/PIN_structure.jpg" 1760675330.29227 12359 d5bcb22f53f2df45543d09d4a3b90e53 ""
-  "img/circuito.png" 1760977400.13002 37715 84f3cf7228833a134fa2d2a409f01616 ""
-  "img/pcb_front.png" 1760984451.48043 701735 66194ab904c89432f8a7d5f6f45d00b7 ""
-  "img/pcb_rear.png" 1760983878.37863 499729 df49f0fd1551d7af5781de2b0b40bf7f ""
-  "informe.aux" 1760984776.59841 3135 2895fca8491b6df86a01a402238deed4 "pdflatex"
-  "informe.bbl" 1760984775.58426 2066 f3438bbcf3cb78d2ab91e9cdaecf3704 "bibtex informe"
-  "informe.tex" 1760984773.76766 18130 f69b30331dcba5ad4f8c00662bd5bead ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1730600292.1939 535383 d3efdb18617f29de472038e618f96af4 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1741507762 7571873 d88a86cb981c867cbfd0abeea1254b72 ""
+  "IEEEtran.cls" 1760469320.21468 288304 b67b6fc6c2abb39f9b461923f5199343 ""
+  "img/BPW34S-ezgif.com-webp-to-png-converter.png" 1760987501.48463 1146112 68ddc6dddf2ff116d9501bfda28cc9d7 ""
+  "img/C-V.png" 1760987501.48463 14181 dc6f78ccf026452c7eaca2e5c137b321 ""
+  "img/PIN_structure.jpg" 1760769643.22663 12359 d5bcb22f53f2df45543d09d4a3b90e53 ""
+  "img/circuito.png" 1760987501.48463 37715 84f3cf7228833a134fa2d2a409f01616 ""
+  "img/pcb_front.png" 1760987501.48763 701735 66194ab904c89432f8a7d5f6f45d00b7 ""
+  "img/pcb_rear.png" 1760987501.48863 499729 df49f0fd1551d7af5781de2b0b40bf7f ""
+  "informe.aux" 1760991958.21364 3162 da0f21fb77949304d44ac3af52124414 "pdflatex"
+  "informe.bbl" 1760990993.10702 2253 05bae2bc4d49edf30020329c06a0d720 "bibtex informe"
+  "informe.tex" 1760991956.89116 18287 2f54b2086522fa1448f43bb1f77a8637 ""
   (generated)
   "informe.aux"
   "informe.log"
