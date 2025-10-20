@@ -13,166 +13,6 @@
 		(comment 4 "Low-Cost DIY Particle Detector for Ionising Radiation")
 	)
 	(lib_symbols
-		(symbol "Connector:Conn_01x02_Pin"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02_Pin"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x02_Pin_1_1"
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.8636 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "DIY_detector-custom-parts:TL072"
 			(pin_names
 				(offset 1.016)
@@ -1533,22 +1373,16 @@
 		(uuid "1c74af0f-a315-4708-9369-1845188f1ec2")
 	)
 	(junction
-		(at 77.47 57.15)
+		(at 173.99 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "21c68bed-da37-43b4-9a1c-13a38c5eaf90")
-	)
-	(junction
-		(at 58.42 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "469433be-bf63-4a10-b6b6-0ffa6ea25150")
+		(uuid "27dce625-31c3-4458-8717-71e79fe5100e")
 	)
 	(junction
 		(at 144.78 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "64fef8c4-657b-4546-9fc5-95b3db226330")
+		(uuid "6ebebfb3-d4cb-4057-8649-ab5f1fd3b5a9")
 	)
 	(junction
 		(at 77.47 41.91)
@@ -1575,10 +1409,16 @@
 		(uuid "ac96c2f8-421f-4afb-a42a-4f6742a24a9b")
 	)
 	(junction
-		(at 40.64 57.15)
+		(at 49.53 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bf4bb5c0-571a-40b4-9026-a79987935ae8")
+	)
+	(junction
+		(at 77.47 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0be0ff7-f49d-4f75-a83c-e655c1188521")
 	)
 	(junction
 		(at 95.25 41.91)
@@ -1587,38 +1427,22 @@
 		(uuid "c46356fa-76b2-4f7c-bdad-fe9cd82b1b45")
 	)
 	(junction
-		(at 49.53 57.15)
+		(at 58.42 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb3a4131-f26d-4564-a8d6-f7c46b9bfd5b")
 	)
 	(junction
-		(at 173.99 48.26)
+		(at 67.31 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "db28bbbd-70c6-44d8-a44a-104f247f18e8")
+		(uuid "d7bfe269-38bf-4110-8c40-129bfae8b60f")
 	)
 	(junction
 		(at 88.9 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "df2be6f6-567e-442a-b97f-e57a9a74ea4f")
-	)
-	(junction
-		(at 194.31 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f8c67ced-6bc9-4f80-b540-66e79abdb8a5")
-	)
-	(wire
-		(pts
-			(xy 69.85 57.15) (xy 77.47 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03ee38ca-76a5-48b4-ad2b-680af945cb33")
 	)
 	(wire
 		(pts
@@ -1652,7 +1476,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 57.15) (xy 49.53 57.15)
+			(xy 67.31 57.15) (xy 58.42 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1679,6 +1503,26 @@
 			(type default)
 		)
 		(uuid "214eeed5-116f-4b1b-a53f-8e67f861543f")
+	)
+	(wire
+		(pts
+			(xy 67.31 57.15) (xy 77.47 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "215d7360-6a75-4f04-be64-b84eb20cdf80")
+	)
+	(wire
+		(pts
+			(xy 144.78 62.23) (xy 210.82 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "237602f0-35ff-4b67-9e3c-b16de1202de8")
 	)
 	(wire
 		(pts
@@ -1712,7 +1556,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 69.85) (xy 58.42 81.28)
+			(xy 67.31 69.85) (xy 67.31 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1772,7 +1616,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 69.85) (xy 49.53 81.28)
+			(xy 58.42 69.85) (xy 58.42 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1792,7 +1636,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 57.15) (xy 58.42 62.23)
+			(xy 67.31 57.15) (xy 67.31 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1832,16 +1676,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 48.26) (xy 184.15 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49435228-97a7-4335-9e75-d254f739f42b")
-	)
-	(wire
-		(pts
 			(xy 95.25 41.91) (xy 102.87 41.91)
 		)
 		(stroke
@@ -1869,16 +1703,6 @@
 			(type default)
 		)
 		(uuid "585684bd-a54c-4f67-a8c3-0076c627ef6a")
-	)
-	(wire
-		(pts
-			(xy 194.31 62.23) (xy 194.31 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59c26204-2d65-46da-99ba-09f3d07c1b3b")
 	)
 	(wire
 		(pts
@@ -1952,27 +1776,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 72.39) (xy 194.31 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ca36192-0abd-485d-b202-da254b1faf37")
-	)
-	(wire
-		(pts
-			(xy 186.69 62.23) (xy 194.31 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85106e3b-3e43-496b-bc55-3cbf97964cb6")
-	)
-	(wire
-		(pts
-			(xy 31.75 81.28) (xy 31.75 69.85)
+			(xy 40.64 81.28) (xy 40.64 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1992,17 +1796,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 62.23) (xy 179.07 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c2112cd-3182-4b28-872c-dc7d0c37b83d")
-	)
-	(wire
-		(pts
-			(xy 40.64 81.28) (xy 40.64 69.85)
+			(xy 49.53 81.28) (xy 49.53 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2032,7 +1826,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 62.23) (xy 31.75 57.15)
+			(xy 40.64 62.23) (xy 40.64 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2122,17 +1916,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 62.23) (xy 210.82 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2662a3a-4ab5-45cd-af9d-3719831a2ccf")
-	)
-	(wire
-		(pts
-			(xy 49.53 62.23) (xy 49.53 57.15)
+			(xy 58.42 62.23) (xy 58.42 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2222,26 +2006,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 57.15) (xy 67.31 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db098452-9c38-426f-bb6f-240cdb347300")
-	)
-	(wire
-		(pts
-			(xy 173.99 48.26) (xy 179.07 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db34cc2e-7dd9-4f11-8fb5-f913bde2a394")
-	)
-	(wire
-		(pts
 			(xy 134.62 41.91) (xy 134.62 64.77)
 		)
 		(stroke
@@ -2249,6 +2013,16 @@
 			(type default)
 		)
 		(uuid "dc2b76f0-7f46-4cbb-a49f-88b8ed3b50a1")
+	)
+	(wire
+		(pts
+			(xy 173.99 48.26) (xy 184.15 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc4c170d-e5ce-4cb7-a65a-082a22beaccf")
 	)
 	(wire
 		(pts
@@ -2282,7 +2056,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 57.15) (xy 40.64 62.23)
+			(xy 49.53 57.15) (xy 49.53 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2312,7 +2086,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 57.15) (xy 40.64 57.15)
+			(xy 40.64 57.15) (xy 49.53 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2322,23 +2096,13 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 57.15) (xy 40.64 57.15)
+			(xy 58.42 57.15) (xy 49.53 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f7256824-5087-480f-a355-93cc5a2c88bf")
-	)
-	(wire
-		(pts
-			(xy 144.78 62.23) (xy 163.83 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbf87240-f0f8-4a43-a478-7aed1456684c")
 	)
 	(wire
 		(pts
@@ -2374,6 +2138,7 @@
 	)
 	(label "Output"
 		(at 204.47 62.23 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2496,7 +2261,7 @@
 	)
 	(symbol
 		(lib_id "Sensor_Optical:BPW34")
-		(at 31.75 67.31 270)
+		(at 40.64 67.31 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2504,7 +2269,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00004fa6949d")
 		(property "Reference" "D4"
-			(at 34.29 68.58 0)
+			(at 43.18 68.58 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2512,7 +2277,7 @@
 			)
 		)
 		(property "Value" "BPW34"
-			(at 29.21 67.31 0)
+			(at 38.1 67.31 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2520,7 +2285,7 @@
 			)
 		)
 		(property "Footprint" "OptoDevice:Osram_BPW34S-SMD"
-			(at 31.75 67.31 0)
+			(at 40.64 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2529,7 +2294,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 67.31 0)
+			(at 40.64 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2538,7 +2303,7 @@
 			)
 		)
 		(property "Description" "silicon PIN photodiode"
-			(at 31.75 67.31 0)
+			(at 40.64 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2547,7 +2312,7 @@
 			)
 		)
 		(property "MFG" "Osram"
-			(at 31.75 67.31 0)
+			(at 40.64 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2556,7 +2321,7 @@
 			)
 		)
 		(property "MFG_PN" "BPX61"
-			(at 31.75 67.31 0)
+			(at 40.64 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2565,7 +2330,7 @@
 			)
 		)
 		(property "FARNELL" "2981630"
-			(at 31.75 67.31 0)
+			(at 40.64 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2574,7 +2339,7 @@
 			)
 		)
 		(property "RS Online" "654-7785"
-			(at 31.75 67.31 0)
+			(at 40.64 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2583,7 +2348,7 @@
 			)
 		)
 		(property "3D_B" "${KIPRJMOD}/3D/BPW34F.wrl"
-			(at 31.75 67.31 0)
+			(at 40.64 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2592,7 +2357,7 @@
 			)
 		)
 		(property "VALUE_B" "BPW34F"
-			(at 31.75 67.31 0)
+			(at 40.64 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2640,7 +2405,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 86.36 41.91 0)
 			(effects
 				(font
@@ -3551,7 +3316,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00004fa69792")
 		(property "Reference" "R6"
-			(at 150.876 53.34 90)
+			(at 156.21 53.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4313,7 +4078,7 @@
 	)
 	(symbol
 		(lib_id "ProyectoFisica-rescue:GND-power")
-		(at 58.42 81.28 0)
+		(at 67.31 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4321,6 +4086,71 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005af83fec")
 		(property "Reference" "#PWR04"
+			(at 67.31 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 67.437 85.6742 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 67.31 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eeac87f2-49ac-4e17-a4eb-56cf1aa8de3d")
+		)
+		(instances
+			(project "ProyectoFisica"
+				(path "/daa4eaae-1bdc-4e40-8346-977fe771903f"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProyectoFisica-rescue:GND-power")
+		(at 58.42 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005af84023")
+		(property "Reference" "#PWR03"
 			(at 58.42 87.63 0)
 			(effects
 				(font
@@ -4365,12 +4195,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "eeac87f2-49ac-4e17-a4eb-56cf1aa8de3d")
+			(uuid "0463c3e3-40d7-44cc-84e3-228641e5e8c1")
 		)
 		(instances
 			(project "ProyectoFisica"
 				(path "/daa4eaae-1bdc-4e40-8346-977fe771903f"
-					(reference "#PWR04")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -4384,8 +4214,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005af84023")
-		(property "Reference" "#PWR03"
+		(uuid "00000000-0000-0000-0000-00005af8405a")
+		(property "Reference" "#PWR02"
 			(at 49.53 87.63 0)
 			(effects
 				(font
@@ -4430,12 +4260,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "0463c3e3-40d7-44cc-84e3-228641e5e8c1")
+			(uuid "8e2c4b4e-64d9-489f-a1f1-892ba8b1152d")
 		)
 		(instances
 			(project "ProyectoFisica"
 				(path "/daa4eaae-1bdc-4e40-8346-977fe771903f"
-					(reference "#PWR03")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -4449,8 +4279,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005af8405a")
-		(property "Reference" "#PWR02"
+		(uuid "00000000-0000-0000-0000-00005af84091")
+		(property "Reference" "#PWR01"
 			(at 40.64 87.63 0)
 			(effects
 				(font
@@ -4487,71 +4317,6 @@
 		)
 		(property "Description" ""
 			(at 40.64 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8e2c4b4e-64d9-489f-a1f1-892ba8b1152d")
-		)
-		(instances
-			(project "ProyectoFisica"
-				(path "/daa4eaae-1bdc-4e40-8346-977fe771903f"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ProyectoFisica-rescue:GND-power")
-		(at 31.75 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005af84091")
-		(property "Reference" "#PWR01"
-			(at 31.75 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 31.877 85.6742 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 31.75 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 31.75 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 31.75 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4655,7 +4420,7 @@
 			)
 		)
 		(property "Value" "+9V"
-			(at 170.434 46.228 0)
+			(at 174.371 43.8658 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4913,7 +4678,7 @@
 	)
 	(symbol
 		(lib_id "Sensor_Optical:BPW34")
-		(at 40.64 67.31 270)
+		(at 49.53 67.31 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4921,127 +4686,6 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005afa9712")
 		(property "Reference" "D3"
-			(at 43.18 68.58 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "BPW34"
-			(at 38.1 67.31 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" "OptoDevice:Osram_BPW34S-SMD"
-			(at 40.64 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "silicon PIN photodiode\r"
-			(at 40.64 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Osram/Vishay"
-			(at 40.64 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG_PN" "BPW34F/FA"
-			(at 40.64 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "FARNELL" "2981621"
-			(at 40.64 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "RS Online" "654-7921"
-			(at 40.64 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "3D_B" "${KIPRJMOD}/3D/BPW34F.wrl"
-			(at 40.64 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VALUE_B" "BPW34F"
-			(at 40.64 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4485ca42-7d30-4afa-959d-36ef84101114")
-		)
-		(pin "2"
-			(uuid "4e0d9974-9524-4c02-94a1-26997ed3f3cb")
-		)
-		(instances
-			(project "ProyectoFisica"
-				(path "/daa4eaae-1bdc-4e40-8346-977fe771903f"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Sensor_Optical:BPW34")
-		(at 49.53 67.31 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005afa9764")
-		(property "Reference" "D2"
 			(at 52.07 68.58 0)
 			(effects
 				(font
@@ -5139,15 +4783,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "d6282df4-cfdd-4063-a108-9669370ddeef")
+			(uuid "4485ca42-7d30-4afa-959d-36ef84101114")
 		)
 		(pin "2"
-			(uuid "8c62159f-eac8-45b3-a0cb-0cc7d400f1a0")
+			(uuid "4e0d9974-9524-4c02-94a1-26997ed3f3cb")
 		)
 		(instances
 			(project "ProyectoFisica"
 				(path "/daa4eaae-1bdc-4e40-8346-977fe771903f"
-					(reference "D2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -5161,8 +4805,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005afa97b6")
-		(property "Reference" "D1"
+		(uuid "00000000-0000-0000-0000-00005afa9764")
+		(property "Reference" "D2"
 			(at 60.96 68.58 0)
 			(effects
 				(font
@@ -5252,6 +4896,127 @@
 		)
 		(property "VALUE_B" "BPW34F"
 			(at 58.42 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6282df4-cfdd-4063-a108-9669370ddeef")
+		)
+		(pin "2"
+			(uuid "8c62159f-eac8-45b3-a0cb-0cc7d400f1a0")
+		)
+		(instances
+			(project "ProyectoFisica"
+				(path "/daa4eaae-1bdc-4e40-8346-977fe771903f"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Optical:BPW34")
+		(at 67.31 67.31 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00005afa97b6")
+		(property "Reference" "D1"
+			(at 69.85 68.58 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "BPW34"
+			(at 64.77 67.31 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" "OptoDevice:Osram_BPW34S-SMD"
+			(at 67.31 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "silicon PIN photodiode\r"
+			(at 67.31 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG" "Osram/Vishay"
+			(at 67.31 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG_PN" "BPW34F/FA"
+			(at 67.31 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FARNELL" "2981621"
+			(at 67.31 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "RS Online" "654-7921"
+			(at 67.31 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "3D_B" "${KIPRJMOD}/3D/BPW34F.wrl"
+			(at 67.31 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VALUE_B" "BPW34F"
+			(at 67.31 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5872,207 +5637,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 182.88 62.23 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "549c0f13-ce42-4494-a452-eedc986d55df")
-		(property "Reference" "C9"
-			(at 182.88 58.674 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 182.88 66.294 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
-			(at 186.69 61.2648 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 182.88 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 182.88 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5a0d0c54-7d44-4fe3-adb7-02c6108fc1dd")
-		)
-		(pin "2"
-			(uuid "22da92df-a0e6-4b0f-9160-92b2e63b8252")
-		)
-		(instances
-			(project ""
-				(path "/daa4eaae-1bdc-4e40-8346-977fe771903f"
-					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 69.85 52.07 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5aa208c5-fb63-430c-ba66-532ac61b2d92")
-		(property "Reference" "J3"
-			(at 71.12 51.4349 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 50.8 53.594 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 69.85 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 69.85 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 69.85 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0f9282ba-c290-4d25-ba58-d7395dcd032d")
-		)
-		(pin "1"
-			(uuid "99f3dcb8-187f-48ba-b706-86a44a166998")
-		)
-		(instances
-			(project ""
-				(path "/daa4eaae-1bdc-4e40-8346-977fe771903f"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ProyectoFisica-rescue:GND-power")
-		(at 194.31 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7de5e601-39c4-41dc-9d52-31f84b65f7ea")
-		(property "Reference" "#PWR11"
-			(at 194.31 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 194.437 80.5942 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 194.31 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 194.31 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 194.31 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a136f20c-e85e-4f02-9585-3595dcf8ce53")
-		)
-		(instances
-			(project "Detector de particulas (FISICA III)"
-				(path "/daa4eaae-1bdc-4e40-8346-977fe771903f"
-					(reference "#PWR11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 170.18 29.21 270)
 		(unit 1)
@@ -6140,169 +5704,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 194.31 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "95b3701a-cade-45b7-a8d0-51900aee546c")
-		(property "Reference" "R8"
-			(at 196.342 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2k2"
-			(at 194.31 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 194.31 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 194.31 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10k 1% THT"
-			(at 194.31 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG" "Multicomp"
-			(at 10.16 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFG_PN" "MCMF006FF1002A50"
-			(at 10.16 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "FARNELL" "2401780"
-			(at 10.16 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f376976d-9552-4ddb-a129-d9a3fab9cbad")
-		)
-		(pin "1"
-			(uuid "b8ca510d-f112-4644-bb85-eae6f93d403e")
-		)
-		(instances
-			(project "Detector de particulas (FISICA III)"
-				(path "/daa4eaae-1bdc-4e40-8346-977fe771903f"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 166.37 57.15 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9a8cb04a-7a53-41c3-a211-16782d154221")
-		(property "Reference" "J5"
-			(at 163.576 53.594 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 156.718 55.372 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 166.37 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 166.37 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 166.37 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f355999b-9ce3-4b5d-9777-8a5920735e3a")
-		)
-		(pin "1"
-			(uuid "a7d55de8-7eb9-40f8-bc19-ff8aa7f919ed")
-		)
-		(instances
-			(project "Detector de particulas (FISICA III)"
-				(path "/daa4eaae-1bdc-4e40-8346-977fe771903f"
-					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "ProyectoFisica-rescue:+9V-power")
 		(at 166.37 29.21 0)
 		(unit 1)
@@ -6362,75 +5763,6 @@
 			(project "ProyectoFisica"
 				(path "/daa4eaae-1bdc-4e40-8346-977fe771903f"
 					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 181.61 43.18 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e27b7556-f2be-4434-802b-2be233b836f9")
-		(property "Reference" "J4"
-			(at 178.816 39.624 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 171.958 41.402 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 181.61 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 181.61 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "240d600f-7972-4743-9102-19ab0572cbe3")
-		)
-		(pin "1"
-			(uuid "2d340374-fbb3-4b78-9eb1-c926ca1a8e39")
-		)
-		(instances
-			(project "Detector de particulas (FISICA III)"
-				(path "/daa4eaae-1bdc-4e40-8346-977fe771903f"
-					(reference "J4")
 					(unit 1)
 				)
 			)

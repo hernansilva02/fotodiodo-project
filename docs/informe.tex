@@ -30,7 +30,7 @@
         Facultad Regional Avellaneda\\
         Universidad Tecnológica Nacional\\
         Buenos Aires, Argentina\\
-        foo@gmail.com
+        ramirezelias.marcos@gmail.com
     }
     \and
     \IEEEauthorblockN{Florencia Mincone}
@@ -38,7 +38,7 @@
         Facultad Regional Avellaneda\\
         Universidad Tecnológica Nacional\\
         Buenos Aires, Argentina\\
-        foo@gmail.com
+        flormincone1@gmail.com
     }
     \authornewline
     \IEEEauthorblockN{Nicolás Lahorca}
@@ -79,8 +79,7 @@
     la asignatura Física Electrónica. Dicho proyecto se trata de un detector y
     contador de partículas beta, cubriendo de esta forma el tema de "Radiación"
     de la asignatura. Para más información sobre el proyecto, se recomienda
-    visitar el repositorio del mismo que se encuentra en el siguiente enlace:
-    (enlace al repo del proyecto).
+    visitar el repositorio del mismo que se encuentra en \cite{git_repo}.
 \section{Principio de Funcionamiento}
     \subsection{¿Que son las radiaciones $\beta$?}
         Las radiaciones $\beta$ son un tipo de radiacion ionizante, la cúal se
@@ -190,7 +189,11 @@
                 posible observar en la Fig.~\ref{fig:bpw34}\subref{subfig:bpw34}; si se logra
                 aislarlo completamente de la luz incidente y de interferencias
                 electromagnéticas, es capaz de detectar radiaciones ionizantes
-                en su zona sensible.
+                en su zona sensible.\par
+                Para aumentar la superficie total de detección, el circuito
+                utiliza 4 diodos en paralelo. Esto no modifica el valor de
+                profundidad de la zona sensible calculada a partir de
+                (\ref{d_x}).
             \item Etapa de amplificación: Es necesario tener un nivel de ruido
                 muy reducido, ya que un nivel alto escondería los picos debido a
                 los impactos de las partículas. El candidato ideal que satisface
@@ -206,7 +209,7 @@
 
         \subsection{Etapa de detección}
             Debido a que uno de los objetivos es que el dispositivo detector sea
-            portable, la alimentación del circuito es de una pila de 9 V, con
+            portable, la alimentación del circuito es de una batería de 9 V, con
             una tensión nominal de 9,9 V. Con este valor de alimentación, el
             circuito amplificador entrega aproximadamente 8 V de polarización
             inversa a los diodos. La Fig.~\ref{fig:bpw34}\subref{subfig:c-v}
@@ -231,8 +234,25 @@
             \begin{equation*}
                 \sigma = \rho~t
             \end{equation*}
-            donde $\sigma$ es la densidad superficial, $\rho$ es la densidad y t
-            es el espesor de la zona sensible (d(V) calculado).
+            donde $\sigma$ es la densidad superficial, $\rho$ es la densidad del
+            silicio y t es el espesor de la zona sensible (d(V) calculado).
+
+            \begin{figure}[ht]
+                \centering
+                \subfloat[] {%
+                    \includegraphics[width=1.5in]{img/BPW34S-ezgif.com-webp-to-png-converter.png}
+                    \label{subfig:bpw34}
+                }
+                \hfil
+                \subfloat[] {%
+                    \includegraphics[width=1.5in]{img/C-V.png}
+                    \label{subfig:c-v}
+                }
+                \caption{Fotodiodo BPW34S de la marca Osram. (a) Imágen real del
+                fotodiodo. (b) Curva característica C-V del BPW34S}
+                \label{fig:bpw34}
+            \end{figure}
+
             Para 33 $\mathrm{\mu m}$, esto es
             \begin{IEEEeqnarray*}{C} %deberia usar \begin{equation} con \begin{split}
                 \sigma=\rho~t\\
@@ -241,27 +261,95 @@
                        = 7,6\times 10^{-3}\ \mathrm{g\cdot cm^{-2}}
             \end{IEEEeqnarray*}
 
-            En la base de datos de \cite{nist} es posible observar que para Si,
-            la energía cinética máxima del electrón para un rango de $7,6\times
-            10^{-3}\ \mathrm{g\cdot cm^{-2}}$ es 60 KeV.
+            En la base de datos de \cite{nist} es posible observar que para el
+            Si, la energía cinética máxima del electrón para un rango de
+            $7,6\times 10^{-3}\ \mathrm{g\cdot cm^{-2}}$ es 60 KeV.
+
+            Con el fin de anular interferencias electromagnéticas externas y la
+            luz del ambiente, el circuito se ubica dentro de un gabinete
+            metálico de aluminio estanco.
         \subsection{Etapa de amplificación}
+            El amplificador operacional, cuyas descripciones se explicó
+            anteriormente, consta de 2 etapas; ambas se pueden ver en la
+            Fig.~\ref{fig:circ}.
+            \begin{itemize}
+                \item Etapa de transimpedancia (primer etapa): Para transformar
+                    los picos de corriente en picos de voltaje es necesario
+                    utilizar un primer amplificador en configuración
+                    transimpedancia; su característica fundamental es que la
+                    corriente generada en los diodos (decenas de microampere)
+                    atraviesa una resistencia de realimentación de valor grande,
+                    generando, por ley de Ohm, una caida de tensión en ella. A
+                    la salida del primer amplificador tendremos
+                    \begin{equation*}
+                        V_{out1} = V_{ref1} - I_{D}\ R_{fb}
+                    \end{equation*}
+                    donde $\mathrm{V_{ref1}} = V\ R1/(R1+R2)$ es la tensión de referencia del
+                    primer amplificador; su valor tiene que ser 8 V y se logra a
+                    partir del divisor de voltaje entre las resistencias R1 y R2
+                    de la Fig.~\ref{fig:circ}. $\mathrm{I_{D}}$ es la corriente
+                    de los diodos y $\mathrm{R_{fb}}$ es la resistencia de
+                    realimentación (\emph{feedback}), equivalente a R3 en
+                    la Fig.~\ref{fig:circ}
+                \item Etapa de amplificación (segunda etapa):
+                    $\mathrm{V_{out1}}$ es de valor de tensión muy débil, por
+                    ello es necesario amplificar la salida de la primer etapa.
+                    Esto es posible mediante un segundo amplificador que toma
+                    como entrada $\mathrm{V_{out1}}$.
+            \end{itemize}
 
-        \begin{figure}[!b]
-            \centering
-            \subfloat[] {%
-                \includegraphics[width=1.5in]{img/BPW34S-ezgif.com-webp-to-png-converter.png}
-                \label{subfig:bpw34}
-            }
-            \hfil
-            \subfloat[] {%
-                \includegraphics[width=1.5in]{img/C-V.png}
-                \label{subfig:c-v}
-            }
-            \caption{Fotodiodo BPW34S de la marca Osram. (a) Imágen real del
-            fotodiodo. (b) Curva característica C-V del BPW34S}
-            \label{fig:bpw34}
-        \end{figure}
+            Al utilizar 2 amplificadores operacionales (uno por etapa), es
+            necesario adoptar el amplificador OPA2134 de la línea OPAx134
+            previamente mencionada. 
 
+            \begin{figure}[!t]
+                \centering
+                \includegraphics[width=\linewidth]{img/circuito.png}
+                \caption{Circuito completo}
+                \label{fig:circ}
+            \end{figure}
+
+            \begin{figure}[!t]
+                \centering
+                \subfloat[] {%
+                    \includegraphics[width=2in]{img/pcb_front.png}
+                    \label{subfig:pcb_front}
+                }
+                \hfil
+                \subfloat[] {%
+                    \includegraphics[width=2in]{img/pcb_rear.png}
+                    \label{subfig:pcb_rear}
+                }
+                \caption{Modelado 3D del PCB. (a) Parte frontal, (b) parte
+                posterior}
+                \label{fig:pcb}
+            \end{figure}
+
+
+\section{Limitaciones del Diseño}
+    Las limitaciones o posibles mejoras del diseño actual son las siguientes
+    \begin{enumerate}
+        \item Niveles de energía cinética detectables: Como se ha expresado
+            anteriormente, el nivel máximo de energía medible es 60 KeV, lo cúal
+            es un valor relativamente bajo para partículas $\beta-$; partículas
+            con más energía no serán medidas correctamente. Esto es debido
+            principalmente al área efectiva de detección (área física de la zona
+            sensible de los diodos) y al valor de capacitancia del diodo para
+            $\mathrm{V_{R}}$ dado. Una mejora viable para este problema es el
+            aumento del voltaje de alimentación, de manera tal que aumente
+            $\mathrm{V_{R}}$.
+
+        \item Nivel de ruido: el capacitor C4 que se puede observar en la
+            Fig.~\ref{fig:circ} tiene un papel fundamental en los niveles de
+            ruido de la salida del circuito. Empírimicamente se pudo advertir
+            que utilizando un valor de 22 pF en lugar de 5 pF, las mediciones  
+            de los picos fueron más limpias.
+    \end{enumerate}
+
+\section{Conclusiones}
+    El diseño de detectores de partículas con fotodiodos requiere de un nivel de
+    precisión muy grande para evitar capacitancias parásitas y obtener el menor
+    nivel de ruido posible montado en la señal de salida.
 % Las malditas referencias. TODO: Sacar este comment.
 \bibliographystyle{IEEEtran}
 \bibliography{refs}

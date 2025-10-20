@@ -20,6 +20,11 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{git_repo}
+\BIBentryALTinterwordspacing
+``Detector de partículas beta.'' [Online]. Available: \url{https://github.com/hernansilva02/fotodiodo-project.git}
+\BIBentrySTDinterwordspacing
+
 \bibitem{mpdi}
 \BIBentryALTinterwordspacing
 O.~Keller, M.~Benoit, A.~M\"uller, and S.~Schmeling, ``Smartphone and tablet-based sensing of environmental radioactivity: Mobile low-cost measurements for monitoring, citizen science, and educational purposes,'' \emph{Sensors}, vol.~19, 2019. [Online]. Available: \url{https://www.mdpi.com/1424-8220/19/19/4264}

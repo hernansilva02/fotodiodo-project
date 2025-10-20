@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.10.2)  20 OCT 2025 05:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.10.2)  20 OCT 2025 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -268,20 +268,35 @@ Package caption Info: End \AtBeginDocument code.
 <img/PIN_structure.jpg, id=15, 401.5pt x 288.07625pt>
 File: img/PIN_structure.jpg Graphic file (type jpg)
 <use img/PIN_structure.jpg>
-Package pdftex.def Info: img/PIN_structure.jpg  used on input line 132.
+Package pdftex.def Info: img/PIN_structure.jpg  used on input line 131.
 (pdftex.def)             Requested size: 180.67499pt x 129.6375pt.
- [2 <./img/PIN_structure.jpg>]
-<img/BPW34S-ezgif.com-webp-to-png-converter.png, id=22, 2488.29625pt x 1553.805pt>
+<img/BPW34S-ezgif.com-webp-to-png-converter.png, id=16, 2488.29625pt x 1553.805pt>
 File: img/BPW34S-ezgif.com-webp-to-png-converter.png Graphic file (type png)
 <use img/BPW34S-ezgif.com-webp-to-png-converter.png>
-Package pdftex.def Info: img/BPW34S-ezgif.com-webp-to-png-converter.png  used on input line 254.
+Package pdftex.def Info: img/BPW34S-ezgif.com-webp-to-png-converter.png  used on input line 245.
 (pdftex.def)             Requested size: 108.405pt x 67.68954pt.
-<img/C-V.png, id=24, 444.66125pt x 587.19376pt>
+<img/C-V.png, id=18, 444.66125pt x 587.19376pt>
 File: img/C-V.png Graphic file (type png)
 <use img/C-V.png>
-Package pdftex.def Info: img/C-V.png  used on input line 259.
+Package pdftex.def Info: img/C-V.png  used on input line 250.
 (pdftex.def)             Requested size: 108.405pt x 143.15141pt.
- (./informe.bbl)
+ [2 <./img/PIN_structure.jpg>]
+<img/circuito.png, id=25, 1433.355pt x 630.355pt>
+File: img/circuito.png Graphic file (type png)
+<use img/circuito.png>
+Package pdftex.def Info: img/circuito.png  used on input line 307.
+(pdftex.def)             Requested size: 252.0pt x 110.82355pt.
+<img/pcb_front.png, id=26, 1690.315pt x 893.3375pt>
+File: img/pcb_front.png Graphic file (type png)
+<use img/pcb_front.png>
+Package pdftex.def Info: img/pcb_front.png  used on input line 317.
+(pdftex.def)             Requested size: 144.54pt x 76.38933pt.
+<img/pcb_rear.png, id=27, 1729.46124pt x 927.465pt>
+File: img/pcb_rear.png Graphic file (type png)
+<use img/pcb_rear.png>
+Package pdftex.def Info: img/pcb_rear.png  used on input line 322.
+(pdftex.def)             Requested size: 144.54pt x 77.51027pt.
+ (./informe.bbl [3 <./img/BPW34S-ezgif.com-webp-to-png-converter.png> <./img/C-V.png> <./img/circuito.png> <./img/pcb_front.png> <./img/pcb_rear.png>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -293,22 +308,22 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3
+[4
 
- <./img/BPW34S-ezgif.com-webp-to-png-converter.png> <./img/C-V.png>] (./informe.aux) ) 
+] (./informe.aux) ) 
 Here is how much of TeX's memory you used:
- 4016 strings out of 477136
- 70298 string characters out of 5813392
+ 4044 strings out of 477136
+ 70829 string characters out of 5813392
  1870388 words of memory out of 6000000
- 24275 multiletter control sequences out of 15000+600000
+ 24300 multiletter control sequences out of 15000+600000
  549416 words of font info for 104 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 57i,10n,63p,365b,370s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,10n,63p,365b,368s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on informe.pdf (3 pages, 1098499 bytes).
+Output written on informe.pdf (4 pages, 1894554 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 90 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex informe"] 1760947212.71528 "informe.aux" "informe.bbl" "informe" 1760947222.39109 0
+["bibtex informe"] 1760984775.55778 "informe.aux" "informe.bbl" "informe" 1760984776.73185 0
   "./IEEEtran.bst" 1759935388.14289 61632 1eded68932b68cdfaf04f54eba82634b ""
-  "./refs.bib" 1760858959.07321 1304 8553035093b91d7cb1235f192aff4bc9 ""
-  "informe.aux" 1760947222.27831 2169 749d9f70184e2fb187c98bb7e19b7d0f "pdflatex"
+  "./refs.bib" 1760968694.80744 1466 9aadb9b7e3918f8fbef95a37f28c78ed ""
+  "informe.aux" 1760984776.59841 3135 2895fca8491b6df86a01a402238deed4 "pdflatex"
   (generated)
   "informe.bbl"
   "informe.blg"
   (rewritten before read)
-["pdflatex"] 1760947221.5683 "informe.tex" "informe.pdf" "informe" 1760947222.3916 0
+["pdflatex"] 1760984775.58886 "informe.tex" "informe.pdf" "informe" 1760984776.7334 0
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1721433600 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -83,9 +83,12 @@
   "img/BPW34S-ezgif.com-webp-to-png-converter.png" 1760912103.11635 1146112 68ddc6dddf2ff116d9501bfda28cc9d7 ""
   "img/C-V.png" 1760934407.46733 14181 dc6f78ccf026452c7eaca2e5c137b321 ""
   "img/PIN_structure.jpg" 1760675330.29227 12359 d5bcb22f53f2df45543d09d4a3b90e53 ""
-  "informe.aux" 1760947222.27831 2169 749d9f70184e2fb187c98bb7e19b7d0f "pdflatex"
-  "informe.bbl" 1760947212.74123 1872 6290fa915300eb53dca830fb3a22d3d2 "bibtex informe"
-  "informe.tex" 1760947219.92387 13344 3dd129b59e1970bb5b229a43bf4716f1 ""
+  "img/circuito.png" 1760977400.13002 37715 84f3cf7228833a134fa2d2a409f01616 ""
+  "img/pcb_front.png" 1760984451.48043 701735 66194ab904c89432f8a7d5f6f45d00b7 ""
+  "img/pcb_rear.png" 1760983878.37863 499729 df49f0fd1551d7af5781de2b0b40bf7f ""
+  "informe.aux" 1760984776.59841 3135 2895fca8491b6df86a01a402238deed4 "pdflatex"
+  "informe.bbl" 1760984775.58426 2066 f3438bbcf3cb78d2ab91e9cdaecf3704 "bibtex informe"
+  "informe.tex" 1760984773.76766 18130 f69b30331dcba5ad4f8c00662bd5bead ""
   (generated)
   "informe.aux"
   "informe.log"

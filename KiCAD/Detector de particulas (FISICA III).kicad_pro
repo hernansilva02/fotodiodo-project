@@ -133,7 +133,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 1.0,
+        "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.4,
         "solder_mask_clearance": 0.2,
@@ -650,7 +650,7 @@
   "sheets": [
     [
       "daa4eaae-1bdc-4e40-8346-977fe771903f",
-      "Root"
+      "Raíz"
     ]
   ],
   "text_variables": {}
