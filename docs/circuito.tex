@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\usepackage{circuitikz}
+
+\begin{document}
+\ctikzset{bipoles/length=7mm, amp symbol font={\scriptsize}}
+\begin{circuitikz}[american, font=\scriptsize, transform shape, scale=0.75]
+    %\ctikzset{diodes/scale=0.5}
+    \centering
+    \draw
+    (0,0) to[photodiode,name=D1] (0,5)
+    node[above left=3pt](D1label) at (D1) {$D_{1}$}
+    node[below left=3pt] at (D1) {BPW34S}
+    (0,0) node[ground, scale=1.4] {}
+
+    (2,0) to[photodiode,name=D2] (2,5)
+    node[above left=3pt] at (D2) {$D_{2}$}
+    node[below left=3pt] at (D2) {BPW34S}
+    (2,0) node[ground, scale=1.4] {}
+
+    (4,0) to[photodiode,name=D3] (4,5)
+    node[above left=3pt] at (D3) {$D_{3}$}
+    node[below left=3pt] at (D3) {BPW34S}
+    (4,0) node[ground, scale=1.4] {}
+
+    (6,0) to[photodiode,name=D4] (6,5) coordinate(vd4)
+    node[above left=3pt] at (D4) {$D_{4}$}
+    node[below left=3pt] at (D4) {BPW34S}
+    (6,0) node[ground, scale=1.4](d4gnd) {}
+
+    % muevo el cursor desde gnd de D4 hasta donde termina la pata de D4 creo una linea desde el D4 con long = 1
+    ++(0,5)
+    to[short] ++(2,0)
+
+    node[op amp, anchor=-] (opamp) {}
+    (0,5) -- (opamp.-)
+    (opamp.up) ++ (.2,0) node[right=2pt] {U1}
+    (opamp.down) ++ (.2,0) node[below=2pt, right=2pt] {OPA2134}
+    (opamp.down) -- node[ground, scale=1.4] {} ++(0,0)
+    (opamp.down) node[below=1pt, right] {$-$}
+    (opamp.up) node[above=2pt, right=-0.5pt] {$+$}
+    (opamp.+) -- ++(0,-1) coordinate(VD1)
+    % primer divisor
+    to[R, l=$R_{2}$] (VD1 |- d4gnd) node[ground, scale=1.4] {}
+    (VD1) to[short,*-] ++(.75,0)
+    to[R, l=$R_{1}$] ++(.75,0) to[short,-*] ++(.75,0) node[right] {+9 $\mathrm{V}$} % Resistencia del divisor
+    (opamp.up) %-- ++(0,.5) coordinate(V+C1)
+    to[C, l=$C_{5}$] ++(0,1.2) node[vcc](vcc) {} node[above right=.5pt] {+9~V}
+    (vd4) to[short, *-] ++(0,2)
+    to[R, l=$R_{3}$, a=10 M$\Omega$] ++(4.5,0) coordinate(r3_out1)
+    (opamp.out) -- (r3_out1 |- opamp.out) coordinate(vout1_node1)
+    % capacitor en paralelo a R3
+    %(r3_out1) to[short, *-] ++(0,1)
+    to[short,*-] (vout1_node1 |- r3_out1)
+    (vout1_node1 |- vout1_node1) to[C, l=$C_{4}$] ++(1.5,0)
+    to[R, l=$R_{4}$] ++(2.5,0) coordinate(vin2-)
+    % segunda etapa
+    node[op amp, anchor=-] (opamp2) {}
+    (opamp2.up) ++ (.2,0) node[right] {U2}
+    (opamp2.down) ++ (.2,0) node[right] {OPA2134}
+    (opamp2.up) to[C, l=$C_{5}$] ++(0,1.2) node[vcc](vcc) {} node[above right=.5pt] {+9~V}
+    (opamp2.down) -- node[ground, scale=1.4] {} ++(0,0)
+    (opamp2.down) node[right] {-}
+    
+    (opamp2.+) -- ++(0,-1) coordinate(VD2)
+    to[R] (VD2 |- d4gnd) node[above right] {R7} node[ground, scale=1.4] {} 
+    (VD2) to[short,*-] ++(.75,0)
+    to[R, l=$R_{6}$, a=10 K$\Omega$] ++(.75,0) to[short,-*] ++(.75,0) node[right] {+9 $\mathrm{V}$} % Resistencia del segundo divisor
+    (VD2) ++(0,-.5) to[short, *-] ++(-1.15,0) coordinate(cr7)
+    to[C, l=$C_{7}$] (cr7 |- d4gnd) node[ground, scale=1.4] {}
+
+    (vin2-) ++(-.5,0) coordinate(vin2-_new)
+    to[short, *-] (vin2-_new |- r3_out1)
+    to[R, l=$R_{5}$] ++(4.5,0) coordinate(r5_out1)
+    (opamp2.out) -- (r5_out1 |- opamp2.out) coordinate(vout2_node1)
+    to[short,*-] (vout2_node1 |- r5_out1)
+    % out, final del circuito
+    (vout2_node1) to[short, *-o] ++(1,0) node[above] {Output}
+    (r3_out1) to[short, *-] ++(0,1.5) to[C, l^=$C_{1}$] ++(-4.5,0)
+    to[short, -*] ++(0,-1.5)
+    (r5_out1) to[short, *-] ++(0,1.5) to[C, l^=$C_{6}$] ++(-4.5,0)
+    to[short, -*] ++(0,-1.5)
+    ;
+\end{circuitikz}
+\end{document}

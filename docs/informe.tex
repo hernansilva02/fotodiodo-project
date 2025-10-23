@@ -2,6 +2,8 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{url}
+\usepackage[RPvoltages]{circuitikz}
+\usepackage{siunitx}
 \ifCLASSOPTIONcompsoc
     \usepackage[caption=false,font=normalsize,labelfon t=sf,textfont=sf]{subfig}
 \else
@@ -77,8 +79,8 @@
 \section{Introducción}
     El presente documento sirve como informe sobre el proyecto de fin de año de
     la asignatura Física Electrónica. Dicho proyecto se trata de un detector y
-    contador de partículas beta, cubriendo de esta forma el tema de "Radiación"
-    de la asignatura. Para más información sobre el proyecto, se recomienda
+    contador de partículas beta, cubriendo de esta forma el tema radiación de
+    la asignatura. Para más información sobre el proyecto, se recomienda
     visitar el repositorio del mismo que se encuentra en \cite{git_repo}.
 \section{Principio de Funcionamiento}
     \subsection{¿Que son las radiaciones $\beta$?}
@@ -267,7 +269,7 @@
 
             Con el fin de anular interferencias electromagnéticas externas y la
             luz del ambiente, el circuito se ubica dentro de un gabinete
-            metálico de aluminio estanco.
+            estanco de aluminio.
         \subsection{Etapa de amplificación}
             El amplificador operacional, cuyas descripciones se explicó
             anteriormente, consta de 2 etapas; ambas se pueden ver en la
@@ -301,10 +303,99 @@
             Al utilizar 2 amplificadores operacionales (uno por etapa), es
             necesario adoptar el amplificador OPA2134 de la línea OPAx134
             previamente mencionada. 
+            \tikzset{every picture/.style={/tikz/font=\normalsize}}
+
+
 
             \begin{figure}[!t]
                 \centering
-                \includegraphics[width=\linewidth]{img/circuito.png}
+                \ctikzset{bipoles/length=7mm, amp symbol font={\footnotesize}}
+                \begin{circuitikz}[american, font=\footnotesize, transform shape,
+                    scale=0.46]
+    %\ctikzset{diodes/scale=0.5}
+                    \centering
+                    \draw
+                    (0,0) to[photodiode,name=D1] (0,5)
+                    node[above left=5pt](D1label) at (D1) {$D_{1}$}
+                    node[below left=3pt] at (D1) {BPW34S}
+                    (0,0) node[ground, scale=2] {}
+
+                    (2,0) to[photodiode,name=D2] (2,5)
+                    node[above left=5pt] at (D2) {$D_{2}$}
+                    node[below left=3pt] at (D2) {BPW34S}
+                    (2,0) node[ground, scale=2] {}
+
+                    (4,0) to[photodiode,name=D3] (4,5)
+                    node[above left=5pt] at (D3) {$D_{3}$}
+                    node[below left=3pt] at (D3) {BPW34S}
+                    (4,0) node[ground, scale=2] {}
+
+                    (6,0) to[photodiode,name=D4] (6,5) coordinate(vd4)
+                    node[above left=5pt] at (D4) {$D_{4}$}
+                    node[below left=3pt] at (D4) {BPW34S}
+                    (6,0) node[ground, scale=2](d4gnd) {}
+
+    % muevo el cursor desde gnd de D4 hasta donde termina la pata de D4 creo una linea desde el D4 con long = 1
+                    ++(0,5)
+                    to[short] ++(2,0)
+
+                    node[op amp, anchor=-] (opamp) {}
+                    (0,5) -- (opamp.-)
+                    (opamp.up) ++ (.2,0) node[right=2pt] {U1}
+                    (opamp.down) ++ (.2,0) node[below=2pt, right=2pt] {OPA2134}
+                    (opamp.down) -- node[ground, scale=2] {} ++(0,0)
+                    (opamp.down) node[below=1pt, right] {$-$}
+                    (opamp.up) node[above=2pt, right=-0.5pt] {$+$}
+                    (opamp.+) -- ++(0,-1) coordinate(VD1)
+    % primer divisor
+                    to[R] node[above=35pt, right=4pt] {$R_{2}$} node[above=25pt,
+                    right=4pt] {\SI{15}{\kilo\ohm}} (VD1 |- d4gnd) node[ground, scale=2] {}
+                    (VD1) to[short,*-] ++(.75,0)
+                    to[R, l=$R_{1}$, a=\SI{4.7}{\kilo\ohm}] ++(.75,0) to[short,-*] ++(.75,0) node[right] {+9 $\mathrm{V}$} % Resistencia del divisor
+                    (VD1) ++(0,-.5) to[short, *-] ++(-1.15,0) coordinate(cR2)
+                    to[C] node[above=5.5ex, right=1ex] {$C_{3}$} node[above=3ex, right=.5ex] {\SI{100}{\nano\farad}} (cR2 |- d4gnd) node[ground, scale=2] {}
+                    (opamp.up) %-- ++(0,.5) coordinate(V+C1)
+                    to[C, l=$C_{2}$, a=\SI{100}{\nano\farad}] ++(0,1) node[vcc](vcc) {} node[above right=.5pt] {+9~V}
+                    (vd4) to[short, *-] ++(0,2)
+                    to[R, l=$R_{3}$, a=\SI{10}{\mega\ohm}] ++(4.5,0) coordinate(r3_out1)
+                    (opamp.out) -- (r3_out1 |- opamp.out) coordinate(vout1_node1)
+    % capacitor en paralelo a R3
+    %(r3_out1) to[short, *-] ++(0,1)
+                    to[short,*-] (vout1_node1 |- r3_out1)
+                    (vout1_node1 |- vout1_node1) to[C, l=$C_{4}$,
+                    a=\SI{100}{\nano\farad}] ++(1.5,0)
+                    to[R, l=$R_{4}$, a=\SI{1}{\kilo\ohm}] ++(2.5,0) coordinate(vin2-)
+    % segunda etapa
+                    node[op amp, anchor=-] (opamp2) {}
+                    (opamp2.up) ++ (.2,0) node[right=2pt] {U2}
+                    (opamp2.down) ++ (.2,0) node[below=2pt, right=2pt] {OPA2134}
+                    (opamp2.up) to[C, l=$C_{2}$, a=\SI{100}{\nano\farad}] ++(0,1.2) node[vcc](vcc) {} node[above right=.5pt] {+9~V}
+                    (opamp2.down) -- node[ground, scale=2] {} ++(0,0)
+                    (opamp2.down) node[below=1pt, right] {$-$}
+                    (opamp2.up) node[above=2pt, right=-0.5pt] {$+$}
+
+                    (opamp2.+) -- ++(0,-1) coordinate(VD2)
+                    to[R] node[above=35pt, right=4pt] {$R_{7}$} node[above=25pt,
+                    right=4pt] {\SI{10}{\kilo\ohm}} (VD2 |- d4gnd) node[ground, scale=2] {} 
+                    (VD2) to[short,*-] ++(.75,0)
+                    to[R, l=$R_{6}$, a=\SI{10}{\kilo\ohm}] ++(.75,0) to[short,-*] ++(.75,0) node[right] {+9 $\mathrm{V}$} % Resistencia del segundo divisor
+                    (VD2) ++(0,-.5) to[short, *-] ++(-1.15,0) coordinate(cR7)
+                    to[C] node[above=5.5ex, right=1ex] {$C_{6}$} node[above=3ex, right=.5ex] {\SI{100}{\nano\farad}} (cR7 |- d4gnd) node[ground, scale=2] {}
+
+                    (vin2-) ++(-.5,0) coordinate(vin2-_new)
+                    to[short, *-] (vin2-_new |- r3_out1)
+                    to[R, l=$R_{5}$, a=\SI{100}{\kilo\ohm}] ++(4.5,0) coordinate(r5_out1)
+                    (opamp2.out) -- (r5_out1 |- opamp2.out) coordinate(vout2_node1)
+                    to[short,*-] (vout2_node1 |- r5_out1)
+    % out, final del circuito
+                    (vout2_node1) to[short, *-o] ++(1,0) node[above] {Output}
+                    (r3_out1) to[short, *-] ++(0,1.5) to[C, l=$C_{1}$, a=\SI{5}{\pico\farad}] ++(-4.5,0)
+                    to[short, -*] ++(0,-1.5)
+                    (r5_out1) to[short, *-] ++(0,1.5) to[C, l^=$C_{5}$, a=\SI{10}{\pico\farad}] ++(-4.5,0)
+                    to[short, -*] ++(0,-1.5)
+                    ;
+                \end{circuitikz}
+%                \includegraphics[width=\linewidth]{circuito.pdf}
                 \caption{Circuito completo}
                 \label{fig:circ}
             \end{figure}
