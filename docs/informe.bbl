@@ -22,7 +22,7 @@
 
 \bibitem{git_repo}
 \BIBentryALTinterwordspacing
-``Detector de partículas beta.'' [Online]. Available: \url{https://github.com/hernansilva02/fotodiodo-project.git}
+H.~Silva, ``Detector de partículas beta,'' [Accedido: 23 Oct. 2025]. [Online]. Available: \url{https://github.com/hernansilva02/fotodiodo-project.git}
 \BIBentrySTDinterwordspacing
 
 \bibitem{mpdi}
@@ -42,7 +42,7 @@ M.~Berger, J.~Coursey, M.~Zucker, and J.~Chang, ``Stopping-power \& range tables
 
 \bibitem{original_repo}
 \BIBentryALTinterwordspacing
-``Diy particle detector.'' [Online]. Available: \url{https://github.com/ozel/DIY_particle_detector.git}
+Ozel, ``Diy particle detector,'' [Accedido: 23 Oct. 2025]. [Online]. Available: \url{https://github.com/ozel/DIY_particle_detector.git}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

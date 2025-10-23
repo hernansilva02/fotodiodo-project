@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.10.21)  23 OCT 2025 01:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.10.21)  23 OCT 2025 12:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -516,7 +516,7 @@ Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEtab
 \sf@top=\skip59
 \sf@bottom=\skip60
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 64.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 65.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count324
@@ -524,20 +524,20 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 ) (./informe.aux)
 \openout1 = `informe.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 
 -- Lines per column: 56 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -561,7 +561,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 64.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 65.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -569,35 +569,30 @@ Package caption Info: End \AtBeginDocument code.
 
 
 ]
-<img/PIN_structure.jpg, id=18, 401.5pt x 288.07625pt>
-File: img/PIN_structure.jpg Graphic file (type jpg)
-<use img/PIN_structure.jpg>
-Package pdftex.def Info: img/PIN_structure.jpg  used on input line 133.
-(pdftex.def)             Requested size: 180.67499pt x 129.6375pt.
-<img/BPW34S-ezgif.com-webp-to-png-converter.png, id=19, 2488.29625pt x 1553.805pt>
+<img/BPW34S-ezgif.com-webp-to-png-converter.png, id=20, 2488.29625pt x 1553.805pt>
 File: img/BPW34S-ezgif.com-webp-to-png-converter.png Graphic file (type png)
 <use img/BPW34S-ezgif.com-webp-to-png-converter.png>
-Package pdftex.def Info: img/BPW34S-ezgif.com-webp-to-png-converter.png  used on input line 247.
+Package pdftex.def Info: img/BPW34S-ezgif.com-webp-to-png-converter.png  used on input line 281.
 (pdftex.def)             Requested size: 108.405pt x 67.68954pt.
-<img/C-V.png, id=21, 444.66125pt x 587.19376pt>
+<img/C-V.png, id=22, 444.66125pt x 587.19376pt>
 File: img/C-V.png Graphic file (type png)
 <use img/C-V.png>
-Package pdftex.def Info: img/C-V.png  used on input line 252.
+Package pdftex.def Info: img/C-V.png  used on input line 286.
 (pdftex.def)             Requested size: 108.405pt x 143.15141pt.
- [2 <./img/PIN_structure.jpg>]
-Overfull \hbox (28.1385pt too wide) in paragraph at lines 397--399
+ [2]
+Overfull \hbox (28.1385pt too wide) in paragraph at lines 431--433
  [][] 
  []
 
 <img/pcb_front.png, id=28, 1690.315pt x 893.3375pt>
 File: img/pcb_front.png Graphic file (type png)
 <use img/pcb_front.png>
-Package pdftex.def Info: img/pcb_front.png  used on input line 408.
+Package pdftex.def Info: img/pcb_front.png  used on input line 442.
 (pdftex.def)             Requested size: 144.54pt x 76.38933pt.
 <img/pcb_rear.png, id=29, 1729.46124pt x 927.465pt>
 File: img/pcb_rear.png Graphic file (type png)
 <use img/pcb_rear.png>
-Package pdftex.def Info: img/pcb_rear.png  used on input line 413.
+Package pdftex.def Info: img/pcb_rear.png  used on input line 447.
 (pdftex.def)             Requested size: 144.54pt x 77.51027pt.
 (./informe.bbl [3 <./img/BPW34S-ezgif.com-webp-to-png-converter.png> <./img/C-V.png> <./img/pcb_front.png> <./img/pcb_rear.png>])
 
@@ -615,18 +610,18 @@ Before submitting the final camera ready copy, remember to:
 
 ] (./informe.aux) ) 
 Here is how much of TeX's memory you used:
- 36596 strings out of 477136
- 954018 string characters out of 5813391
+ 36653 strings out of 477136
+ 954829 string characters out of 5813391
  1927388 words of memory out of 6000000
- 56537 multiletter control sequences out of 15000+600000
- 549923 words of font info for 105 fonts, out of 8000000 for 9000
+ 56586 multiletter control sequences out of 15000+600000
+ 555060 words of font info for 117 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 99i,10n,103p,430b,1412s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on informe.pdf (4 pages, 1927759 bytes).
+ 99i,12n,103p,427b,1410s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on informe.pdf (4 pages, 1924461 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 115 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

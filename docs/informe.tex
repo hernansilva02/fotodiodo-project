@@ -3,9 +3,10 @@
 \usepackage{amsmath}
 \usepackage{url}
 \usepackage[RPvoltages]{circuitikz}
+\usepackage{tikz}
 \usepackage{siunitx}
 \ifCLASSOPTIONcompsoc
-    \usepackage[caption=false,font=normalsize,labelfon t=sf,textfont=sf]{subfig}
+    \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
 \else
     \usepackage[caption=false,font=footnotesize]{subfig}
 \fi
@@ -81,7 +82,7 @@
     la asignatura Física Electrónica. Dicho proyecto se trata de un detector y
     contador de partículas beta, cubriendo de esta forma el tema radiación de
     la asignatura. Para más información sobre el proyecto, se recomienda
-    visitar el repositorio del mismo que se encuentra en \cite{git_repo}.
+    visitar el repositorio del mismo \cite{git_repo}.
 \section{Principio de Funcionamiento}
     \subsection{¿Que son las radiaciones $\beta$?}
         Las radiaciones $\beta$ son un tipo de radiacion ionizante, la cúal se
@@ -93,7 +94,7 @@
                 átomo emite un electrón y un antineutrino, conviritiendo de esta
                 manera un neutrón en un protón como \emph{Desintegración $\beta-$}.
             \item \textit{Emisión de positrones}: El núcleo inestable emite un
-                positrón, es decir, un electrón cargado positivamente, junto con
+                positrón, es decir, la antipartícula del electrón, junto con
                 un neutrino. De esta forma se logra transformar un protón en un
                 neutrón. Este proceso recibe el nombre de
                 \emph{Desintegración $\beta+$}. 
@@ -127,10 +128,43 @@
        Estos iones fijos son los responsables que en dichas regiones se encuentre
        un campo eléctrico, el cúal atrapa e impulsa a los portadores, aumentando
        la intensidad de corriente eléctrica a través del diodo.
-       \newpage
-       \begin{figure}[!t]
+       \begin{figure}[!b]
            \centering
-           \includegraphics[width=2.5in]{img/PIN_structure.jpg}
+           \begin{tikzpicture}[line cap=round,line join=round,scale=0.8]
+  % Dimensiones base
+               \def\Hsd{1.6} % altura del semiconductor
+               \def\W{8.0} % ancho total
+               \def\xP{2.0} % fin de P
+               \def\xI{5.0} % fin de I (inicio de N)
+
+  % Contorno del semiconductor
+               \draw[very thick] (0,0) rectangle (\W,\Hsd);
+
+  % Rellenos (en escala de grises apta IEEE)
+               \fill[gray!25]    (0,0) rectangle (\xP,\Hsd);          % P+
+               \fill[gray!5]     (\xP,0) rectangle (\xI,\Hsd);         % I
+               \fill[gray!35]    (\xI,0) rectangle (\W,\Hsd);          % N+
+
+               \draw[dashed,gray!60] (\xP,0) -- (\xP,\Hsd);
+               \draw[dashed,gray!60] (\xI,0) -- (\xI,\Hsd);
+
+  % Contactos metálicos (superiores) y terminales
+  % P+: metal
+               \fill[black!60] (0.3,\Hsd) rectangle (1.7,\Hsd+0.3);
+               \draw[very thick] (1.0,\Hsd+0.3) -- (1.0,\Hsd+1.0) node[above]{\small Ánodo (A)};
+  % N+: metal
+               \fill[black!60] (6.3,\Hsd) rectangle (7.7,\Hsd+0.3);
+               \draw[very thick] (7.0,\Hsd+0.3) -- (7.0,\Hsd+1.0) node[above]{\small Cátodo (K)};
+
+  % Etiquetas de regiones
+           \node at ({1.0},{0.5*\Hsd}) {\large P$^{\boldsymbol{+}}$};
+               \node at ({0.5*(\xP+\xI)},{0.5*\Hsd}) {\large I};
+           \node at ({0.5*(\xI+\W)},{0.5*\Hsd}) {\large N$^{\boldsymbol{+}}$};
+
+  % Ancho de la región intrínseca (Wi)
+               \draw[|-|] (\xP,-0.35) -- (\xI,-0.35)
+               node[midway,below=2pt] {$W_i$};
+           \end{tikzpicture}
            \caption{Corte transversal de una estructura típica del diodo PIN}
            \label{fig:pin}
        \end{figure}
